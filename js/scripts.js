@@ -57,9 +57,9 @@ $(document).ready(function() {
 
     // Sticky nav
 
-    if (!$('nav').hasClass('overlay')) {
-        $('.nav-container').css('min-height', $('nav').outerHeight());
-    }
+    //if (!$('nav').hasClass('overlay')) {
+    //    $('.nav-container').css('min-height', $('nav').outerHeight());
+    //}
     
     // Set bg of nav container if dark skin
     
@@ -75,11 +75,17 @@ $(document).ready(function() {
             $('nav').removeClass('fixed');
         }
 
-        if ($(window).scrollTop() > $('nav').outerHeight()) {
+        if ($(window).scrollTop() > $('section.header').innerHeight() - 250) {
             $('nav').addClass('shrink');
         } else {
             $('nav').removeClass('shrink');
         }
+
+		if ($(window).scrollTop() > $('section.header').innerHeight()) {
+			$('nav').addClass('dropnav');
+		} else {
+			$('nav').removeClass('dropnav');
+		}
     });
 
     // Mobile nav
