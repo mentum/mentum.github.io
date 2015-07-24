@@ -145,3 +145,9 @@ footer {
         text-align: right;
     }
 }
+
+@media (min-width: 768px) {
+    .col-sm-4 {
+        height: auto;
+    }
+}
