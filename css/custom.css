@@ -78,6 +78,25 @@ nav.dropnav .navbar .logo-dropnav {
     top: 0;
 }
 
+nav #language {
+    margin-top: 10px;
+}
+
+nav #language, nav #language a {
+    color: white;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    q-moz-transition: all 0.3s ease;
+}
+
+nav #language a:hover {
+    color: #ddd;
+}
+
+nav #language a.active {
+    font-weight: bold;
+}
+
 section.header {
     height: 90vh;
     padding: 0;
@@ -111,7 +130,7 @@ section.features .tabs li.active .tab-title .indicator {
 
 .contact-1 a {
     color: white;
-    transition: all 035s ease;
+    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
 }
